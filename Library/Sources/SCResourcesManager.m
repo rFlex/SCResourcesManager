@@ -258,7 +258,11 @@
             }
             
             if (resource == nil) {
-                [resourcesHandler resourceUrl:downloadTask.url failedToInstall:error inReceiver:receiver];
+                if ([resourcesHandler respondsToSelector:@selector(resourceUrl:failedToInstall:inReceiver:)]) {
+                    [resourcesHandler resourceUrl:downloadTask.url failedToInstall:error inReceiver:receiver];
+                } else {
+                    NSLog(@"Resource url %@ failed to download", downloadTask.url);
+                }
             } else {
                 [resourcesHandler installResource:resource inReceiver:receiver wasDownloaded:YES];
             }
