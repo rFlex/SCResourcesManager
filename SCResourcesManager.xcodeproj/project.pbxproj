@@ -8,14 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		DCFFE18719A216E10028A69C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFFE18619A216E10028A69C /* Foundation.framework */; };
-		DCFFE18C19A216E10028A69C /* SCResourcesManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DCFFE18B19A216E10028A69C /* SCResourcesManager.h */; };
-		DCFFE18E19A216E10028A69C /* SCResourcesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFE18D19A216E10028A69C /* SCResourcesManager.m */; };
 		DCFFE19519A216E10028A69C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFFE19419A216E10028A69C /* XCTest.framework */; };
 		DCFFE19619A216E10028A69C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFFE18619A216E10028A69C /* Foundation.framework */; };
 		DCFFE19819A216E10028A69C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFFE19719A216E10028A69C /* UIKit.framework */; };
 		DCFFE19B19A216E10028A69C /* libSCResourcesManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFFE18319A216E10028A69C /* libSCResourcesManager.a */; };
 		DCFFE1A119A216E10028A69C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCFFE19F19A216E10028A69C /* InfoPlist.strings */; };
 		DCFFE1A319A216E10028A69C /* SCResourcesManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFE1A219A216E10028A69C /* SCResourcesManagerTests.m */; };
+		DCFFE1C119A217500028A69C /* NSObject+Resources.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFE1AD19A217500028A69C /* NSObject+Resources.m */; };
+		DCFFE1C219A217500028A69C /* SCResourcesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFE1AF19A217500028A69C /* SCResourcesManager.m */; };
+		DCFFE1C319A217500028A69C /* SCResourcesCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFE1B119A217500028A69C /* SCResourcesCache.m */; };
+		DCFFE1C419A217500028A69C /* SCDynamicReference.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFE1B319A217500028A69C /* SCDynamicReference.m */; };
+		DCFFE1C519A217500028A69C /* SCResource.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFE1B519A217500028A69C /* SCResource.m */; };
+		DCFFE1C619A217500028A69C /* SCImageResourcesHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFE1B819A217500028A69C /* SCImageResourcesHandler.m */; };
+		DCFFE1C719A217500028A69C /* SCResourceDownloadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFE1BA19A217500028A69C /* SCResourceDownloadTask.m */; };
+		DCFFE1C819A217500028A69C /* SCBaseDownloadPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFE1BD19A217500028A69C /* SCBaseDownloadPolicy.m */; };
+		DCFFE1C919A217500028A69C /* SCVideoResourcesHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFE1C019A217500028A69C /* SCVideoResourcesHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +42,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				DCFFE18C19A216E10028A69C /* SCResourcesManager.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,14 +51,33 @@
 		DCFFE18319A216E10028A69C /* libSCResourcesManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSCResourcesManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCFFE18619A216E10028A69C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DCFFE18A19A216E10028A69C /* SCResourcesManager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SCResourcesManager-Prefix.pch"; sourceTree = "<group>"; };
-		DCFFE18B19A216E10028A69C /* SCResourcesManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCResourcesManager.h; sourceTree = "<group>"; };
-		DCFFE18D19A216E10028A69C /* SCResourcesManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCResourcesManager.m; sourceTree = "<group>"; };
 		DCFFE19319A216E10028A69C /* SCResourcesManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCResourcesManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCFFE19419A216E10028A69C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		DCFFE19719A216E10028A69C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		DCFFE19E19A216E10028A69C /* SCResourcesManagerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SCResourcesManagerTests-Info.plist"; sourceTree = "<group>"; };
 		DCFFE1A019A216E10028A69C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DCFFE1A219A216E10028A69C /* SCResourcesManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCResourcesManagerTests.m; sourceTree = "<group>"; };
+		DCFFE1AC19A217500028A69C /* NSObject+Resources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Resources.h"; sourceTree = "<group>"; };
+		DCFFE1AD19A217500028A69C /* NSObject+Resources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Resources.m"; sourceTree = "<group>"; };
+		DCFFE1AE19A217500028A69C /* SCResourcesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCResourcesManager.h; sourceTree = "<group>"; };
+		DCFFE1AF19A217500028A69C /* SCResourcesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCResourcesManager.m; sourceTree = "<group>"; };
+		DCFFE1B019A217500028A69C /* SCResourcesCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCResourcesCache.h; sourceTree = "<group>"; };
+		DCFFE1B119A217500028A69C /* SCResourcesCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCResourcesCache.m; sourceTree = "<group>"; };
+		DCFFE1B219A217500028A69C /* SCDynamicReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCDynamicReference.h; sourceTree = "<group>"; };
+		DCFFE1B319A217500028A69C /* SCDynamicReference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCDynamicReference.m; sourceTree = "<group>"; };
+		DCFFE1B419A217500028A69C /* SCResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCResource.h; sourceTree = "<group>"; };
+		DCFFE1B519A217500028A69C /* SCResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCResource.m; sourceTree = "<group>"; };
+		DCFFE1B619A217500028A69C /* SCResourcesHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCResourcesHandler.h; sourceTree = "<group>"; };
+		DCFFE1B719A217500028A69C /* SCImageResourcesHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCImageResourcesHandler.h; sourceTree = "<group>"; };
+		DCFFE1B819A217500028A69C /* SCImageResourcesHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCImageResourcesHandler.m; sourceTree = "<group>"; };
+		DCFFE1B919A217500028A69C /* SCResourceDownloadTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCResourceDownloadTask.h; sourceTree = "<group>"; };
+		DCFFE1BA19A217500028A69C /* SCResourceDownloadTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCResourceDownloadTask.m; sourceTree = "<group>"; };
+		DCFFE1BB19A217500028A69C /* SCResourcesDownloadPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCResourcesDownloadPolicy.h; sourceTree = "<group>"; };
+		DCFFE1BC19A217500028A69C /* SCBaseDownloadPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBaseDownloadPolicy.h; sourceTree = "<group>"; };
+		DCFFE1BD19A217500028A69C /* SCBaseDownloadPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBaseDownloadPolicy.m; sourceTree = "<group>"; };
+		DCFFE1BE19A217500028A69C /* SCResourcesManagerHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCResourcesManagerHolder.h; sourceTree = "<group>"; };
+		DCFFE1BF19A217500028A69C /* SCVideoResourcesHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCVideoResourcesHandler.h; sourceTree = "<group>"; };
+		DCFFE1C019A217500028A69C /* SCVideoResourcesHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCVideoResourcesHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +106,7 @@
 		DCFFE17A19A216E10028A69C = {
 			isa = PBXGroup;
 			children = (
-				DCFFE18819A216E10028A69C /* SCResourcesManager */,
+				DCFFE18819A216E10028A69C /* Sources */,
 				DCFFE19C19A216E10028A69C /* SCResourcesManagerTests */,
 				DCFFE18519A216E10028A69C /* Frameworks */,
 				DCFFE18419A216E10028A69C /* Products */,
@@ -107,14 +132,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DCFFE18819A216E10028A69C /* SCResourcesManager */ = {
+		DCFFE18819A216E10028A69C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				DCFFE18B19A216E10028A69C /* SCResourcesManager.h */,
-				DCFFE18D19A216E10028A69C /* SCResourcesManager.m */,
+				DCFFE1AC19A217500028A69C /* NSObject+Resources.h */,
+				DCFFE1AD19A217500028A69C /* NSObject+Resources.m */,
+				DCFFE1AE19A217500028A69C /* SCResourcesManager.h */,
+				DCFFE1AF19A217500028A69C /* SCResourcesManager.m */,
+				DCFFE1B019A217500028A69C /* SCResourcesCache.h */,
+				DCFFE1B119A217500028A69C /* SCResourcesCache.m */,
+				DCFFE1B219A217500028A69C /* SCDynamicReference.h */,
+				DCFFE1B319A217500028A69C /* SCDynamicReference.m */,
+				DCFFE1B419A217500028A69C /* SCResource.h */,
+				DCFFE1B519A217500028A69C /* SCResource.m */,
+				DCFFE1B619A217500028A69C /* SCResourcesHandler.h */,
+				DCFFE1B719A217500028A69C /* SCImageResourcesHandler.h */,
+				DCFFE1B819A217500028A69C /* SCImageResourcesHandler.m */,
+				DCFFE1B919A217500028A69C /* SCResourceDownloadTask.h */,
+				DCFFE1BA19A217500028A69C /* SCResourceDownloadTask.m */,
+				DCFFE1BB19A217500028A69C /* SCResourcesDownloadPolicy.h */,
+				DCFFE1BC19A217500028A69C /* SCBaseDownloadPolicy.h */,
+				DCFFE1BD19A217500028A69C /* SCBaseDownloadPolicy.m */,
+				DCFFE1BE19A217500028A69C /* SCResourcesManagerHolder.h */,
+				DCFFE1BF19A217500028A69C /* SCVideoResourcesHandler.h */,
+				DCFFE1C019A217500028A69C /* SCVideoResourcesHandler.m */,
 				DCFFE18919A216E10028A69C /* Supporting Files */,
 			);
-			path = SCResourcesManager;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		DCFFE18919A216E10028A69C /* Supporting Files */ = {
@@ -224,7 +268,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCFFE18E19A216E10028A69C /* SCResourcesManager.m in Sources */,
+				DCFFE1C519A217500028A69C /* SCResource.m in Sources */,
+				DCFFE1C119A217500028A69C /* NSObject+Resources.m in Sources */,
+				DCFFE1C919A217500028A69C /* SCVideoResourcesHandler.m in Sources */,
+				DCFFE1C819A217500028A69C /* SCBaseDownloadPolicy.m in Sources */,
+				DCFFE1C619A217500028A69C /* SCImageResourcesHandler.m in Sources */,
+				DCFFE1C719A217500028A69C /* SCResourceDownloadTask.m in Sources */,
+				DCFFE1C419A217500028A69C /* SCDynamicReference.m in Sources */,
+				DCFFE1C319A217500028A69C /* SCResourcesCache.m in Sources */,
+				DCFFE1C219A217500028A69C /* SCResourcesManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,7 +383,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/SCResourcesManager.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SCResourcesManager/SCResourcesManager-Prefix.pch";
+				GCC_PREFIX_HEADER = "Sources/SCResourcesManager-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -343,7 +395,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/SCResourcesManager.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SCResourcesManager/SCResourcesManager-Prefix.pch";
+				GCC_PREFIX_HEADER = "Sources/SCResourcesManager-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
