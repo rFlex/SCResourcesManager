@@ -12,8 +12,6 @@
 		DCFFE19619A216E10028A69C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFFE18619A216E10028A69C /* Foundation.framework */; };
 		DCFFE19819A216E10028A69C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFFE19719A216E10028A69C /* UIKit.framework */; };
 		DCFFE19B19A216E10028A69C /* libSCResourcesManager.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCFFE18319A216E10028A69C /* libSCResourcesManager.a */; };
-		DCFFE1A119A216E10028A69C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCFFE19F19A216E10028A69C /* InfoPlist.strings */; };
-		DCFFE1A319A216E10028A69C /* SCResourcesManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFE1A219A216E10028A69C /* SCResourcesManagerTests.m */; };
 		DCFFE1C119A217500028A69C /* NSObject+Resources.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFE1AD19A217500028A69C /* NSObject+Resources.m */; };
 		DCFFE1C219A217500028A69C /* SCResourcesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFE1AF19A217500028A69C /* SCResourcesManager.m */; };
 		DCFFE1C319A217500028A69C /* SCResourcesCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DCFFE1B119A217500028A69C /* SCResourcesCache.m */; };
@@ -54,9 +52,6 @@
 		DCFFE19319A216E10028A69C /* SCResourcesManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SCResourcesManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCFFE19419A216E10028A69C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		DCFFE19719A216E10028A69C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		DCFFE19E19A216E10028A69C /* SCResourcesManagerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SCResourcesManagerTests-Info.plist"; sourceTree = "<group>"; };
-		DCFFE1A019A216E10028A69C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DCFFE1A219A216E10028A69C /* SCResourcesManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCResourcesManagerTests.m; sourceTree = "<group>"; };
 		DCFFE1AC19A217500028A69C /* NSObject+Resources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Resources.h"; sourceTree = "<group>"; };
 		DCFFE1AD19A217500028A69C /* NSObject+Resources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Resources.m"; sourceTree = "<group>"; };
 		DCFFE1AE19A217500028A69C /* SCResourcesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCResourcesManager.h; sourceTree = "<group>"; };
@@ -107,7 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				DCFFE18819A216E10028A69C /* Sources */,
-				DCFFE19C19A216E10028A69C /* SCResourcesManagerTests */,
 				DCFFE18519A216E10028A69C /* Frameworks */,
 				DCFFE18419A216E10028A69C /* Products */,
 			);
@@ -165,24 +159,6 @@
 			isa = PBXGroup;
 			children = (
 				DCFFE18A19A216E10028A69C /* SCResourcesManager-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		DCFFE19C19A216E10028A69C /* SCResourcesManagerTests */ = {
-			isa = PBXGroup;
-			children = (
-				DCFFE1A219A216E10028A69C /* SCResourcesManagerTests.m */,
-				DCFFE19D19A216E10028A69C /* Supporting Files */,
-			);
-			path = SCResourcesManagerTests;
-			sourceTree = "<group>";
-		};
-		DCFFE19D19A216E10028A69C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				DCFFE19E19A216E10028A69C /* SCResourcesManagerTests-Info.plist */,
-				DCFFE19F19A216E10028A69C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -257,7 +233,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCFFE1A119A216E10028A69C /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +259,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCFFE1A319A216E10028A69C /* SCResourcesManagerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,17 +271,6 @@
 			targetProxy = DCFFE19919A216E10028A69C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		DCFFE19F19A216E10028A69C /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DCFFE1A019A216E10028A69C /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DCFFE1A419A216E10028A69C /* Debug */ = {
@@ -457,6 +420,7 @@
 				DCFFE1A819A216E10028A69C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DCFFE1A919A216E10028A69C /* Build configuration list for PBXNativeTarget "SCResourcesManagerTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +429,7 @@
 				DCFFE1AB19A216E10028A69C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
