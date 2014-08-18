@@ -5,7 +5,8 @@ Pod::Spec.new do |s|
   s.summary      = "A ResourceManager that store localy and fetches resources automatically"
 
   s.description  = <<-DESC
-  		   A ResourceManager that store localy and fetches resources automatically
+		 Download video, images and any kind of resources in a one liner. Datas are saved
+		 locally on the device.
                    DESC
 
   s.homepage     = "https://github.com/rFlex/SCRecorder"
