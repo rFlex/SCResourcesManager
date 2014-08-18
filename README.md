@@ -1,0 +1,4 @@
+SCResourcesManager
+==================
+
+WIP
