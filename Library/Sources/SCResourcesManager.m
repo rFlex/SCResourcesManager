@@ -313,8 +313,6 @@ static SCResourcesManager *_sharedInstance = nil;
     }
     
     if (resourcesManager == nil) {
-        NSLog(@"Unable to get the shared SCResourcesManager instance. The UIApplication's delegate must implement SCResourcesManagerHolder and return the instance when calling the resourcesManager method.");
-        
         dispatch_once(&onceToken, ^{
             _sharedInstance = [[SCResourcesManager alloc] init];
         });
