@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>11862572-2FEE-4220-AF4C-C8CC112C1442</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SCResourcesManager</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2A253A1E-115F-4BC4-953C-0465C69BC994</key>
+		<string>ssh://github.com/rFlex/SCResourcesManager.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Library/SCResourcesManager.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2A253A1E-115F-4BC4-953C-0465C69BC994</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/rFlex/SCResourcesManager.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2A253A1E-115F-4BC4-953C-0465C69BC994</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2A253A1E-115F-4BC4-953C-0465C69BC994</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SCResourcesManager</string>
+		</dict>
+	</array>
+</dict>
+</plist>
