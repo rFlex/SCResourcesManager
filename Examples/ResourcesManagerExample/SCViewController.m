@@ -19,6 +19,9 @@
 {
     [super viewDidLoad];
     
+    UIImageView *imageView = [[UIImageView alloc] init];
+    imageView.resourceUrl = @"http://sd.keepcalm-o-matic.co.uk/i/keep-calm-and-trololo--43.png";
+    
     self.imageView.resourceUrl = @"http://sd.keepcalm-o-matic.co.uk/i/keep-calm-and-trololo--43.png";
 }
 

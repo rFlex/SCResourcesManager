@@ -117,7 +117,7 @@
         
         if (downloadTask != nil && receiver != nil) {
             [downloadTask addPendingReceiver:receiver];
-            [_downloadTasksByReceiver setObject:downloadTask forKey:[NSValue valueWithNonretainedObject:receiver]];
+            [_downloadTasksByReceiver setObject:downloadTask forKey:[NSValue valueWithPointer:(__bridge const void *)(receiver)]];
             
             if (resourceHandler != nil) {
                 downloadTask.resourcesHandler = resourceHandler;
@@ -247,7 +247,7 @@
     id<SCResourcesHandler> resourcesHandler = downloadTask.resourcesHandler;
     
     for (SCDynamicReference *receiverRef in downloadTask.pendingReceivers) {
-        [_downloadTasksByReceiver removeObjectForKey:[NSValue valueWithNonretainedObject:receiverRef.unretainedValue]];
+        [_downloadTasksByReceiver removeObjectForKey:[NSValue valueWithPointer:receiverRef.unretainedValue]];
         
         id receiver = receiverRef.value;
         
@@ -312,7 +312,7 @@ static SCResourcesManager *_sharedInstance = nil;
         resourcesManager = [del resourcesManager];
     }
     
-    if (resourcesManager == nil) {
+    if (resourcesManager == nil) {        
         dispatch_once(&onceToken, ^{
             _sharedInstance = [[SCResourcesManager alloc] init];
         });

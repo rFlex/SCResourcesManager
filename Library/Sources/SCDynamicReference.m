@@ -47,7 +47,7 @@
     } else {
         _weakValue = value;
     }
-    _unretainedValue = value;
+    _unretainedValue = (__bridge void *)(value);
 }
 
 - (id)value {

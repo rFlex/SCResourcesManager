@@ -17,7 +17,7 @@
 @property (readonly, nonatomic) BOOL isAlive;
 
 // The last known value. May contains an invalid pointer
-@property (readonly, nonatomic, unsafe_unretained) id unretainedValue;
+@property (readonly, nonatomic, unsafe_unretained) void *unretainedValue;
 
 - (id)initWithValue:(id)value strong:(BOOL)strong;
 
